@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+	text-align: center;
+	padding: 0.8rem;
+}
+
+main.main-container {
+	background-color: #e0ffc7;
+	width: 80%;
+	max-width: 880px;
+	margin: auto auto;
+	padding: 44px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+header h2 {
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+header h4 {
+	font-weight: 200;
+	font-style: italic;
+	margin-top: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*https://media.giphy.com/media/l0HlKTOox5UaaBHzy/giphy.gif*/
+span.gif {
+	background: #e0ffc7 url(http://winnerhun.uw.hu/vigyorpofa.gif) no-repeat center center;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+span.gif-2 {
+	background: #e0ffc7 url(https://media.giphy.com/media/l0HlKTOox5UaaBHzy/giphy.gif) no-repeat center center;
+	width: 200px;
+	height: 250px;
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+}
+
+div.get-repos {
+	display: flex;
+	border: 2px transparent solid;
+}
+/* div input,
+div button {
+	display: inline-block;
+} */
+div input {
+	width: 100%;
+	height: 54px;
+	font-size: 1em;
+}
+div input:focus {
+	outline: 2px solid aquamarine;
+}
+div button {
+	width: 20%;
+	font-weight: bolder;
+	background-color: aquamarine;
+	border: 2px solid transparent;
+	font-size: 1.2em;
+	cursor: pointer;
+	text-align: center;
+	height: 54px;
+	margin-left: 10px;
+}
+div button:hover {
+	transition: 0.3s;
+	background-color: black;
+	color: aquamarine;
+	border: 2px solid green;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+div.data-display {
+	padding: 20px;
+	margin-top: 2em;
+	border-radius: 20px;
+	background-color: rgb(194, 236, 159);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	box-shadow: 5px 5px 5px greenyellow;
+}
