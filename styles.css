@@ -39,11 +39,13 @@ span.gif {
 	background: #e0ffc7 url(http://winnerhun.uw.hu/vigyorpofa.gif) no-repeat center center;
 	width: 50px;
 	height: 50px;
-	display: inline-block;
+	display: block;
+	margin: auto;
 }
 span.gif-2 {
-	background: #e0ffc7 url(https://media.giphy.com/media/l0HlKTOox5UaaBHzy/giphy.gif) no-repeat center center;
-	width: 200px;
+	background: rgb(194, 236, 159) url(https://media.giphy.com/media/l0HlKTOox5UaaBHzy/giphy.gif) no-repeat center
+		center;
+	width: 80%;
 	height: 250px;
 	display: block;
 	margin: auto;
@@ -61,13 +63,14 @@ div button {
 div input {
 	width: 100%;
 	height: 54px;
-	font-size: 1em;
+	font-size: 1rem;
+	padding-left: 10px;
 }
 div input:focus {
 	outline: 2px solid aquamarine;
 }
 div button {
-	width: 20%;
+	width: 30%;
 	font-weight: bolder;
 	background-color: aquamarine;
 	border: 2px solid transparent;
@@ -103,4 +106,20 @@ div.data-display {
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 	box-shadow: 5px 5px 5px greenyellow;
+}
+p {
+	font-weight: bold;
+	color: red;
+	text-decoration: underline;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 480px) {
+	span.gif {
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	div input {
+		font-size: 0.7rem;
+	}
 }
