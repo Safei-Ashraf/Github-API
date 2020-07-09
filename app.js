@@ -24,16 +24,10 @@ function getData()
     {
         console.log(inputField.value);
         fetch(`https://api.github.com/users/${inputField.value}/repos`)
-        .then( function (res){
-            if(!res.ok){displayDiv.appendChild(warning);
-                displayDiv.appendChild(warningImage);}
-                else{
-            res.json()}})
+        .then(res=>res.json())
         .then(repos => 
                 {   //Empty Display div:    
                     displayDiv.innerHTML = '';
-
-                    console.log(repos);
                     //Loop on repos:
                     repos.forEach(  repo => 
                     {
@@ -41,9 +35,6 @@ function getData()
                     let mainDiv = document.createElement('div');
                     //Create Repo Name Text:
                     //Append Name to main:
-                    if(repo.message){
-                        console.log(repo.message);
-                    }
                     mainDiv.textContent = repo.name;   
                     //Create Anchor to the repo:
                     let theUrl = document.createElement('a');
