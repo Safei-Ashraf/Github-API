@@ -17,7 +17,6 @@ getBtn.addEventListener('click', ()=>{
 //Main Functions:
 function getData()
 {
-
     if (inputField.value == '') {
         displayDiv.prepend(warning);
 
@@ -25,7 +24,11 @@ function getData()
     {
         console.log(inputField.value);
         fetch(`https://api.github.com/users/${inputField.value}/repos`)
-        .then(res => res.json())
+        .then( function (res){
+            if(!res.ok){displayDiv.appendChild(warning);
+                displayDiv.appendChild(warningImage);}
+                else{
+            res.json()}})
         .then(repos => 
                 {   //Empty Display div:    
                     displayDiv.innerHTML = '';
