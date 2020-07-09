@@ -123,3 +123,40 @@ p {
 		font-size: 0.7rem;
 	}
 }
+div.data-display div.repo-box {
+	padding: 15px;
+	background-color: rgb(175, 231, 128);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	margin-top: 5px;
+	text-align: left;
+	overflow: hidden;
+}
+div.data-display div.repo-box:not(:last-child) {
+	margin-bottom: 5px;
+}
+div.data-display div.repo-box a,
+div.data-display div.repo-box span {
+	float: right;
+	margin-left: 5px;
+	padding: 4px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	font-size: 14px;
+}
+div.data-display div.repo-box a {
+	background-color: #4c89d3;
+}
+div.data-display div.repo-box span {
+	background-color: salmon;
+}
