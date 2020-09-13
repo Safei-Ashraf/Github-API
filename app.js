@@ -1,5 +1,3 @@
-console.log('script attached')
-
 // //Define Main Dom Elements on Page:
 let inputField = document.querySelector('input');
 let getBtn = document.querySelector('button.btn-get');
@@ -22,7 +20,6 @@ function getData()
 
     } else 
     {
-        console.log(inputField.value);
         fetch(`https://api.github.com/users/${inputField.value}/repos`)
         .then(res=>res.json())
         .then(repos => 
